@@ -1,6 +1,6 @@
 {
   "name": "generator-ca-express-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "yeoman generator for clean architecture Node.js express - REST API",
   "main": "app/index.js",
   "repository": {
