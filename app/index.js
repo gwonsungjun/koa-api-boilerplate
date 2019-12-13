@@ -17,7 +17,6 @@ module.exports = class extends Generator {
   initializing() {}
 
   async prompting() {
-
     this.log(yosay('Welcome ' + chalk.red('ca-express-api') + ' generator!'))
 
     const prompts = [
@@ -55,7 +54,7 @@ module.exports = class extends Generator {
         const src = this.sourceRoot() + '/**'
         const dest = this.destinationPath(this.name)
 
-        const files = ['package.json', 'README.md']
+        const files = ['package.json', 'README.md', 'gitignore']
 
         const copyOpts = {
           globOptions: {
@@ -76,6 +75,11 @@ module.exports = class extends Generator {
         files.forEach(f => {
           this.fs.copyTpl(this.templatePath(f), this.destinationPath(`${this.name}/${f}`), opts, copyOpts)
         })
+
+        this.fs.move(
+          this.destinationPath(`${this.name}`, 'gitignore'),
+          this.destinationPath(`${this.name}`, '.gitignore'),
+        )
       },
     }
   }
