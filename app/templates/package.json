@@ -1,0 +1,68 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "description": "myapp",
+  "main": "src",
+  "private": true,
+  "scripts": {
+    "start": "node .",
+    "test": "jest",
+    "coverage": "npm test -- --coverage",
+    "dev": "nodemon -i \"*.test.js\" .",
+    "prod": "pm2-runtime process.yml",
+    "lint": "eslint src",
+    "fixlint": "eslint src --fix"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "modulePaths": [
+      "<rootDir>/src/",
+      "<rootDir>/test/"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "cross-env": "^5.0.5",
+    "dotenv-safe": "^4.0.3",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest": "^24.9.0",
+    "nock": "^9.0.2",
+    "nodemon": "^1.10.2",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/plugin-transform-destructuring": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "@babel/runtime": "^7.6.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "bodymen": "^1.0.3",
+    "compression": "^1.7.1",
+    "cors": "^2.8.4",
+    "dataloader-sequelize": "^2.0.1",
+    "errorhandler": "^1.5.1",
+    "express": "^4.16.2",
+    "glob": "^7.1.4",
+    "immutable": "^4.0.0-rc.12",
+    "jsend": "^1.1.0",
+    "lodash": "^4.17.15",
+    "md5": "^2.2.1",
+    "morgan": "^1.7.0",
+    "mysql2": "^1.7.0",
+    "pm2": "^4.0.0",
+    "querymen": "^2.1.3",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "sequelize": "^5.19.6"
+  }
+}
