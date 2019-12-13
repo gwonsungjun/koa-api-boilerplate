@@ -1,7 +1,7 @@
 {
-  "name": "app",
-  "version": "0.1.0",
-  "description": "myapp",
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
   "main": "src",
   "private": true,
   "scripts": {
