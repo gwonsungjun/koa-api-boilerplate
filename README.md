@@ -18,5 +18,25 @@ npm install -g yo generator-ca-express-api
 yo ca-express-api # generate a new project
 ```
 
+## Directory structure
+
+```
+src
+└── api
+    ├── common
+    │   └── response
+    ├── config
+    │   ├── express
+    │   └── sequelize
+    ├── core
+    │   └── products
+    │       ├── application
+    │       ├── domain
+    │       ├── infrastructure
+    │       └── models
+    └── web
+        └── products
+```
+
 ## License
 [MIT](LICENSE)
