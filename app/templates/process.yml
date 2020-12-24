@@ -1,7 +1,0 @@
-apps:
-  - script: 'src/index.js'
-    name: 'API'
-    exec_mode: 'cluster'
-    instances: 'max'
-    env:
-      NODE_ENV: 'production'

@@ -1,4 +1,5 @@
 {
+  "comments": false,
   "presets": [
     [
       "@babel/preset-env",
@@ -10,8 +11,21 @@
     ]
   ],
   "plugins": [
-    "@babel/plugin-transform-runtime",
-    "@babel/plugin-transform-destructuring",
-    "@babel/plugin-proposal-optional-chaining"
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "common": "./src/common",
+          "data": "./src/data",
+          "domain": "./src/domain",
+          "infrastructure": "./src/infrastructure",
+          "web": "./src/web"
+        }
+      },
+      "@babel/plugin-transform-async-to-generator"
+    ]
   ]
 }

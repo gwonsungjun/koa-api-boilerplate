@@ -1,22 +1,30 @@
 {
-  "parser": "babel-eslint",
-  "rules": {
-    "semi": "off",
-    "comma-dangle": "off",
-    "no-console": "warn"
-  },
-  "extends": ["eslint:recommended"],
   "env": {
     "node": true,
-    "es6": true,
-    "jest": true,
-    "jasmine": true
+    "es2020": true,
+    "jest": true
   },
+  "extends": ["eslint:recommended", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "sourceType": "module",
+    "parser": "babel-eslint",
     "ecmaFeatures": {
-      "modules": true
+      "legacyDecorators": true
+    }
+  },
+  "plugins": ["import"],
+  "rules": {
+    "no-underscore-dangle": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
     }
   }
 }

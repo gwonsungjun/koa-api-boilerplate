@@ -1,29 +1,31 @@
 {
-  "name": "generator-ca-express-api",
-  "version": "0.1.1",
-  "description": "yeoman generator for clean architecture Node.js express - REST API",
+  "name": "generator-koa-api-boilerplate",
+  "version": "0.2.0",
+  "description": "yeoman generator for Node.js koa boilerplate - REST API ",
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gwonsungjun/ca-express-api.git"
+    "url": "git+https://github.com/gwonsungjun/koa-api-boilerplate.git"
   },
   "files": [
     "app"
   ],
   "keywords": [
     "yeoman-generator",
-    "Clean-Architecture",
+    "DDD",
+    "boilerplate",
     "scaffolding",
     "nodejs",
-    "express",
-    "rest"
+    "koa",
+    "rest",
+    "api"
   ],
   "author": "gwonsungjun",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gwonsungjun/ca-express-api/issues"
+    "url": "https://github.com/gwonsungjun/koa-api-boilerplate/issues"
   },
-  "homepage": "https://github.com/gwonsungjun/ca-express-api#readme",
+  "homepage": "https://github.com/gwonsungjun/koa-api-boilerplate#readme",
   "dependencies": {
     "chalk": "^3.0.0",
     "yeoman-generator": "^4.2.0",

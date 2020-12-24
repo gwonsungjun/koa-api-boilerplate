@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "common/*": ["src/common/*"],
+      "domain/*": ["src/domain/*"],
+      "web/*": ["src/web/*"],
+      "infrastructure/*": ["src/infrastructure/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

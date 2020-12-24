@@ -17,7 +17,7 @@ module.exports = class extends Generator {
   initializing() {}
 
   async prompting() {
-    this.log(yosay('Welcome ' + chalk.red('ca-express-api') + ' generator!'))
+    this.log(yosay('Welcome ' + chalk.red('koa-api-boilerplate') + ' generator!'))
 
     const prompts = [
       {
