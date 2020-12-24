@@ -1,5 +1,5 @@
-# generator-koa-ddd-api
-<https://www.npmjs.com/package/generator-ca-express-api>
+# generator-koa-api-boilerplate
+<https://www.npmjs.com/package/generator-koa-api-boilerplate>
 
 Node.js koa boilerplate - REST API   
 
