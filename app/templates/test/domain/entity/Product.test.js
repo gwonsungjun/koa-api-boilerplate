@@ -20,9 +20,10 @@ describe('Product Entity test', () => {
     const price = -20000
 
     try {
-      new Product({ productName, description, price, isDisplay })
+      const product = new Product({ productName, description, price, isDisplay })
+      product.validatePrice()
     } catch (error) {
-      expect(error).toBe('ValidationError')
+      expect(error.message).toBe('ValidationError')
     }
   })
 })
