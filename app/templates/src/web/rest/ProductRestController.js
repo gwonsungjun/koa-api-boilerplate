@@ -38,6 +38,7 @@ export default class ProductRestController {
   @PATCH()
   @route('/:productId')
   updateProduct = async ctx => {
+    await this._validateProduct(ctx)
     await this._validateProductId(ctx)
 
     try {
